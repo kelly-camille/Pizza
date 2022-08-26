@@ -9,4 +9,12 @@ code:
 Expected Output:
 - Undefined
 
--It should 
+Describe Pizza(); 
+- It should creat a cosntructor function for the Pizza object type. 
+code: 
+- pizza ()
+  this.toppings = pizzaToppings;
+  this.size = pizzaSize
+expected output: 
+-> let pizza1 = new Pizza ("[cheese, peperoni]", "Small")
+-Pizza; {toppings: Array(2), "Small}
