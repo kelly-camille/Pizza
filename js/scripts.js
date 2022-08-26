@@ -2,6 +2,7 @@
 function Order () {
   this.pizzas = {};
   this.currentId = 0;
+  this.balance =
 }
 
 Order.prototype.assignId = function() {
@@ -29,5 +30,5 @@ function Pizza (pizzaToppings, size, price) {
 
 Pizza.prototype.addCost = function () {
   this.balance += this.price;
-  return balance;
+  return this.balance;
 }
