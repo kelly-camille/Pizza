@@ -2,7 +2,7 @@
 function Order (balance) {
   this.pizzas = {};
   this.currentId = 0;
-  this.balance = parseInt(balance);
+  this.balance =+  parseInt(balance + price);
 }
 
 Order.prototype.assignId = function() {
@@ -22,11 +22,9 @@ Order.prototype.findPizza = function(id) {
   return false;
 };
 
-function Pizza (pizzaToppings, size) {
+function Pizza (pizzaToppings, size, price) {
   this.toppings = pizzaToppings;
   this.size = size
+  this.price = price
 }
 
-Order.prototype.price = function (pizzaCost) {
-  return this.balance + parseInt(pizzaCost);
-}
