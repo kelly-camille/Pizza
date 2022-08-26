@@ -1,8 +1,7 @@
 // Business
-function Order (balance) {
+function Order () {
   this.pizzas = {};
   this.currentId = 0;
-  this.balance =+  parseInt(balance + price);
 }
 
 Order.prototype.assignId = function() {
@@ -28,3 +27,7 @@ function Pizza (pizzaToppings, size, price) {
   this.price = price
 }
 
+Pizza.prototype.addCost = function () {
+  this.balance += this.price;
+  return balance;
+}
