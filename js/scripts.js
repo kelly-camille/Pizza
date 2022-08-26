@@ -5,6 +5,11 @@ function Order () {
   this.balance = parseInt(balance);
 }
 
+Order.prototype.addPIzza = fucntion (pizza) {
+  pizza.id = this.assighnId();
+  this.pizza[pizza.id] = pizza;
+}
+
 Order.prototype.addPizza = function(pizza) {
   this.currentID += 1;
   return this.currentId

@@ -35,5 +35,14 @@ Order.prototype.addPizza = function(pizza) {
 }
 -------------------------------------------------------------------
 Test5
+-make a prototype to find the pizza id
+  if (this.pizzas[id] !== undefined) {
+    return this.pizzas[id];
+  }
+  return false;
+};
+
+-------------------------------------------------------------------
+Test6
 - make a prototype method to determin cost of pizza 
 
