@@ -33,5 +33,7 @@ Code:
 Order.prototype.addPizza = function(pizza) {
   this.pizzas[pizzas.id] = pizza
 }
-
+-------------------------------------------------------------------
+Test5
+- make a prototype method to determin cost of pizza 
 
