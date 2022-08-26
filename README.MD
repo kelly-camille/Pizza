@@ -18,3 +18,8 @@ code:
 expected output: 
 -> let pizza1 = new Pizza ("[cheese, peperoni]", "Small")
 -Pizza; {toppings: Array(2), "Small}
+
+Describe: It should add a pizza to the order
+Order.prototype.addPizza = function (pizza) {
+
+}
