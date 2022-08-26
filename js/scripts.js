@@ -8,12 +8,19 @@ function Order () {
 Order.prototype.addPIzza = fucntion (pizza) {
   pizza.id = this.assighnId();
   this.pizza[pizza.id] = pizza;
-}
+};
 
-Order.prototype.addPizza = function(pizza) {
-  this.currentID += 1;
+Order.prototype.assignId = function() {
+  this.currentId += 1;
   return this.currentId
 }
+
+Order.prototype.findPizza = function(id) {
+  if (this.pizza[id] !== undefined) {
+    return this.pizza[id];
+  }
+  return false;
+};
 
 function Pizza (pizzaToppings, size) {
 this.toppings = pizzaToppings;
