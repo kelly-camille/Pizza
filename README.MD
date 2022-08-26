@@ -17,8 +17,21 @@ function Pizza (pizzaToppings, size) {
 this.toppings = pizzaToppings;
 this.size = size
 }
----------------------------------------------------------------------
+--------------------------------------------------------------------
 Test3
+-assign an ID to each pizza
+Code:
+Order.prototype.assignId = fucntion() {
+  this.currentId += 1;
+  return this.currentId;
+}
+
+---------------------------------------------------------------------
+Test4
 - make a prototype method to add a new pizza to the order
 Code:
+Order.prototype.addPizza = function(pizza) {
+  this.pizzas[pizzas.id] = pizza
+}
+
 
