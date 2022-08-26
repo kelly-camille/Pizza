@@ -1,6 +1,6 @@
 // Business
-function Order (toppings, size, balance) {
-  this.toppings = toppings;
-  this.size = size;
-  this.balance = balance;
+function Order () {
+  this.pizza = {};
+  this.currentId = 0;
+  this.balance = parseInt(balance);
 }
