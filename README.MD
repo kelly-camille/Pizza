@@ -41,12 +41,12 @@ Copyright (c) 8/28/22 Kelly Bruce
 * make order constructor function 
 * to include a list of pizza objects (to store pizza entries)
 * set the current id to zero
-  ### Code:
-  this.pizzas = {};
-  this.currentId = 0;
-  this.balance = parseInt(balance);
-  ### output: 
-  * undefined 
+### Code:
+this.pizzas = {};
+this.currentId = 0;
+this.balance = parseInt(balance);
+### output: 
+ * undefined 
 ---------------------------------------------------------------------
 ## Test2  
 ### describe:
@@ -59,7 +59,7 @@ this.toppings = pizzaToppings;
 this.size = size
 this.price = price
 ### output: 
-*let pizza1 = new Pizza (["cheese", "saussage"], "small", "10");
+* let pizza1 = new Pizza (["cheese", "saussage"], "small", "10");
 --------------------------------------------------------------------
 ## Test3  
 ### describe:
@@ -71,7 +71,7 @@ Order.prototype.assignId = fucntion() {
   this.currentId += 1;
   return this.currentId;
 ### output:
-*pizza 1, pizza 2, pizza 3 etc...
+* pizza 1, pizza 2, pizza 3 etc...
 
 ---------------------------------------------------------------------
 ## Test4  
@@ -83,7 +83,7 @@ Order.prototype.assignId = fucntion() {
 Order.prototype.addPizza = function(pizza) {
   this.pizzas[pizzas.id] = pizza
 ### output:
- this.pizzas = {pizza1, pizza2} etc... (includes details with toppings size and price)
+* this.pizzas = {pizza1, pizza2} etc... (includes details with toppings size and price)
 -------------------------------------------------------------------
 ## Test5
 ### describe:
@@ -97,7 +97,7 @@ Order.prototype.addPizza = function(pizza) {
   return false;
 };
 ### output:
-Id:1, id:2 etc...
+* Id:1, id:2 etc...
 -------------------------------------------------------------------
 ## Test6
 ### describe:
