@@ -1,8 +1,9 @@
+
 // Business
-function Order (balance) {
+function Order (price) {
   this.pizzas = {};
   this.currentId = 0;
-  this.balance = parseInt(price);
+  this.price = 0;
 }
 
 Order.prototype.assignId = function() {
@@ -24,12 +25,35 @@ Order.prototype.findPizza = function(id) {
 
 function Pizza (pizzaToppings, size, price) {
   this.toppings = pizzaToppings;
-  this.size = size
-  this.price = price
-}
+  this.size = size;
+  this.price = price;
+  return price;
+  }
 
-Order.prototype.addCost = function () {
-  this.balance += this.pizza[price];
-  return this.balance;
-}
-console.log(balance);
+
+
+// Ui
+function handleSubmission(event) {
+  event.preventDefault();
+  const toppingChoice =document.querySelector("input[name='topping']:checked").value;
+  const sizeChoice = document.querySelector("input[name='size']:checked").value;
+  let order = new Order();
+  let pizza = new Pizza(toppingChoice, sizeChoice);
+  order.addPizza(pizza);
+  console.log(pizza);
+
+  console.log(sizeChoice);
+  
+  if (sizeChoice === "small") {
+    price = 10;
+    } else if (sizeChoice === "large") {
+    price = 15;
+    }
+      document.getElementById("balance-display").innerHTML = "Your total is $" + price;
+  }
+
+window.addEventListener("load", function() {
+  const form = document.getElementById("order");
+  form.addEventListener("submit", handleSubmission);
+})
+
