@@ -1,4 +1,3 @@
-README EXAMPLE:
 # Pizza
 
 #### By Kelly Bruce
@@ -78,7 +77,7 @@ Order.prototype.assignId = fucntion() {
 ### describe:
 * addPizza = function(pizza)
 ### test:
-* it should make a prototype method to add a new pizza to the order
+* it should make a prototype method to add a nn6ew pizza to the order
 ### Code:
 Order.prototype.addPizza = function(pizza) {
   this.pizzas[pizzas.id] = pizza
@@ -101,9 +100,15 @@ Order.prototype.addPizza = function(pizza) {
 -------------------------------------------------------------------
 ## Test6
 ### describe:
+* Pizza.prototype.calculate
 ### test:
+* It should calculate price of pizza based on user selection
 ### Code:
+if (this.size === "small") {
+  this.price = 10;
+  } else if (this.size === "large") {
+  this.price = 15;
+  }
 ### output:
-- make a prototype method to determin cost of pizza 
-*still working on this!! meeting requested to review with instructor. 
+- 10 || 15
  

@@ -23,14 +23,19 @@ Order.prototype.findPizza = function(id) {
   return false;
 };
 
-function Pizza (pizzaToppings, size, price) {
+function Pizza (pizzaToppings, size) {
   this.toppings = pizzaToppings;
   this.size = size;
-  this.price = price;
-  return price;
+  this.price = 0;
+}
+
+Pizza.prototype.calculate = function () {
+if (this.size === "small") {
+  this.price = 10;
+  } else if (this.size === "large") {
+  this.price = 15;
   }
-
-
+}
 
 // Ui
 function handleSubmission(event) {
@@ -43,17 +48,12 @@ function handleSubmission(event) {
   console.log(pizza);
 
   console.log(sizeChoice);
-  
-  if (sizeChoice === "small") {
-    price = 10;
-    } else if (sizeChoice === "large") {
-    price = 15;
-    }
-      document.getElementById("balance-display").innerHTML = "Your total is $" + price;
-  }
+  pizza.calculate();
+      document.getElementById("balance-display").innerHTML = "Your total is $" + pizza.price;
+}
 
 window.addEventListener("load", function() {
   const form = document.getElementById("order");
   form.addEventListener("submit", handleSubmission);
-})
+});
 
